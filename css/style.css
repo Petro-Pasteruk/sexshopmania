@@ -625,7 +625,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 225px;
-    margin: 40px auto 0 auto;
+    margin: 40px auto;
 }
 
 .pagination__arrow {
@@ -655,9 +655,79 @@ body {
     background: #97CBF2;
 }
 
+/* \Pagination */
+
+/* Footer */
 .footer {
     height: 315px;
     margin-top: -315px;
+    background: #212425;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buyer,
+.personalArea,
+.contactsOne,
+.contactsTwo {
+    list-style: none;
+}
+
+.footer__heading {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 33px;
+}
+
+.footer__link,
+.footer__item {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.footer__item {
+    max-width: 270px;
+}
+
+.contactsOne .footer__item {
+    opacity: .5;
+}
+
+.footer__link {
+    text-decoration: none;
+    transition: opacity .3s;
+    opacity: .5;
+}
+
+.footer__link:hover {
+    opacity: 1;
+}
+
+.contactsTwo__number {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-bottom: 33px;
+}
+
+.contactsTwo .footer__link {
+    display: flex;
+    align-items: center;
+}
+
+.contactsTwo .footer__link img {
+    margin-right: 8px;
 }
 
 @media (min-width: 1320px) {
