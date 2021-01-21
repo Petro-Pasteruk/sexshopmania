@@ -327,6 +327,148 @@ body {
 /* \Intro */
 
 
+/* benefitsBlog */
+.benefitsBlog {}
+
+.benefitsBlog .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.benefits__wrap {
+    width: 52%;
+}
+
+.benefitsBlog__heading {
+    font-family: "Gilroy", sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: #102A43;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.benefitsBlog__heading:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: #F4E2E5;
+    border-radius: 0 5px 5px 0;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -45px
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.benefits__item {
+    display: inline-flex;
+    align-items: center;
+    max-width: 270px;
+    margin-bottom: 30px;
+    line-height: 26px;
+}
+
+.benefits__item:nth-of-type(2n) {
+    max-width: 328px;
+    line-height: 20px;
+}
+
+.benefits__blockImg {
+    min-width: 68px;
+    height: 68px;
+    background: linear-gradient(0deg, #97CBF2, #97CBF2);
+    box-shadow: 0 6px 50px rgba(179, 113, 135, 0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits__item > div+div {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #122D46;
+    margin-left: 20px;
+}
+
+.benefits__item strong,
+.benefits__item span {
+    font-weight: 800;
+}
+
+.blog__wrap {
+    width: 40%;
+    position: relative;
+}
+
+.blog__wrap:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 200px;
+    top: 50%;
+    transform: translateY(-55%);
+    background: #F4E2E5;
+    border-radius: 20px;
+    left: -45px
+}
+
+.blog {
+    list-style: none;
+}
+
+.blog__item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.blog__item:after {
+    content: url("../images/svg/arrow_rigth.svg");
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    cursor: pointer;
+}
+
+.blog__link {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #102A43;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    max-width: 330px;
+}
+
+.blog__link img {
+    margin-right: 25px;
+}
+
+.blog__btn {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #97CBF2;
+    border: 2px solid #97CBF2;
+    border-radius: 10px;
+    padding: 18px 58px;
+    background: none;
+}
+/* \benefitsBlog */
+
 .footer {
     height: 315px;
     margin-top: -315px;
