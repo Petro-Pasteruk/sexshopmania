@@ -152,6 +152,11 @@ body {
 
 .header-link {
     text-decoration: none;
+    transition: text-decoration .3s;
+}
+
+.header-link:hover {
+    text-decoration: underline;
 }
 
 .header-link.btn {
@@ -266,6 +271,11 @@ body {
     width: 57px;
     border: .3px solid #F4E2E5;
     border-radius: 10px 0 0 10px;
+    transition: background .3s;
+}
+
+.profile:hover {
+    background: rgba(234, 234, 234, 0.82);
 }
 
 .basket__wrap {
@@ -275,6 +285,11 @@ body {
     align-items: center;
     justify-content: center;
     width: 145px;
+    transition: background .3s;
+}
+
+.basket__wrap:hover {
+    background: #6f99b3;
 }
 
 .basket__wrap > a {
@@ -346,7 +361,11 @@ body {
 .catalog__item {
     padding: 10px 0;
     border-bottom: 1px solid #F0F4F8;
-    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.catalog__item:hover .catalog__link {
+    text-decoration: underline;
 }
 
 .catalog__item:nth-of-type(1) {
@@ -364,6 +383,11 @@ body {
     position: relative;
     display: block;
     height: 100%;
+    transition: text-decoration .3s;
+}
+
+.catalog__link:hover {
+    text-decoration: underline;
 }
 
 .catalog__link:after {
@@ -413,6 +437,12 @@ body {
     padding: 18px 12px;
     cursor: pointer;
     margin-bottom: 60px;
+    transition: background .3s, color .3s;
+}
+
+.intro__btn:hover {
+    background: #97CBF2;
+    color: #fff;
 }
 
 .intro__cardList {
@@ -535,6 +565,11 @@ body {
     display: flex;
     align-items: center;
     max-width: 330px;
+    transition: text-decoration .3s;
+}
+
+.blog__item:hover .blog__link {
+    text-decoration: underline;
 }
 
 .blog__link img {
@@ -551,6 +586,13 @@ body {
     border-radius: 10px;
     padding: 18px 58px;
     background: none;
+    transition: background .3s, color .3s;
+    cursor: pointer;
+}
+
+.blog__btn:hover {
+    background: #97CBF2;
+    color: #fff;
 }
 /* \benefitsBlog */
 
@@ -571,6 +613,12 @@ body {
     border: 1px solid #F4E2E5;
     border-radius: 10px;
     margin-bottom: 30px;
+    transition: all .3s;
+}
+
+.category__item:hover {
+    box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+    transform: translate(10px, -10px);
 }
 
 .category__link {
@@ -646,6 +694,11 @@ body {
     text-decoration: none;
     display: inline-block;
     line-height: 26px;
+    transition: text-decoration .3s;
+}
+
+.news__heading:hover {
+    text-decoration: underline;
 }
 
 .news__code {
@@ -695,6 +748,13 @@ body {
     border-radius: 100px;
     border: none;
     cursor: pointer;
+    transition: color .3s, background .3s;
+}
+.news__btn.buy:hover {
+    background: #fff;
+    color: #97CBF2;
+    border: 2px solid #97CBF2;
+    padding: 7px 26px;
 }
 /* \News */
 
@@ -712,6 +772,12 @@ body {
     display: flex;
     align-items: center;
     cursor: pointer;
+    opacity: .7;
+    transition: opacity .3s;
+}
+
+.pagination__arrow:hover {
+    opacity: 1;
 }
 
 .pagination__arrow.next {
@@ -729,6 +795,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background .3s;
+}
+
+.pagination__item:hover {
+    background: #97CBF2;
 }
 
 .pagination__item.active {
