@@ -1052,11 +1052,11 @@ body {
         max-width: 200px;
     }
     #wrapper {
-        padding-bottom: 895px;
+        padding-bottom: 910px;
     }
     .footer {
-        height: 895px;
-        margin-top: -895px;
+        height: 910px;
+        margin-top: -910px;
     }
     .footer ul {
         width: 100%;
