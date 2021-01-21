@@ -22,6 +22,15 @@ body {
     padding: 0 45px;
 }
 
+.main__heading {
+    font-family: "Gilroy", sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: #102A43;
+    position: relative;
+    margin-bottom: 30px;
+}
+
 #wrapper {
     min-height: 100%;
     padding-bottom: 315px;
@@ -340,16 +349,7 @@ body {
     width: 52%;
 }
 
-.benefitsBlog__heading {
-    font-family: "Gilroy", sans-serif;
-    font-weight: bold;
-    font-size: 28px;
-    color: #102A43;
-    position: relative;
-    margin-bottom: 30px;
-}
-
-.benefitsBlog__heading:before {
+.benefitsBlog .main__heading:before {
     content: "";
     position: absolute;
     width: 25px;
@@ -468,6 +468,44 @@ body {
     background: none;
 }
 /* \benefitsBlog */
+
+/* category */
+.category__wrap {
+    padding-top: 40px;
+}
+
+.category {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.category__item {
+    width: 368px;
+    border: 1px solid #F4E2E5;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.category__link {
+    text-decoration: none;
+}
+
+.category__link > div {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(16, 42, 67, 0.9);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.category__link > img {
+    border-radius: 10px;
+}
+/* \Category */
+
 
 .footer {
     height: 315px;
