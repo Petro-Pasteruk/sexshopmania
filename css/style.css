@@ -206,6 +206,127 @@ body {
     font-size: 16px;
 }
 
+/* \Header */
+
+/* Intro */
+.intro {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(92.74deg, #F4E2E5 35.31%, #EF8DB4 111.67%);
+    backdrop-filter: blur(10px);
+}
+
+.intro .container {
+    display: flex;
+}
+
+.catalog__wrap {
+    background: #fff;
+    padding: 0 23px;
+    width: 305px;
+}
+
+.catalog__heading {
+    font-family: "Gilroy", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #102A43;
+    padding-top: 16px;
+    padding-bottom: 18px;
+}
+
+.catalog {
+    list-style: none;
+}
+
+.catalog__item {
+    padding: 10px 0;
+    border-bottom: 1px solid #F0F4F8;
+    transition: background-color .3s;
+}
+
+.catalog__item:nth-of-type(1) {
+    border-top: 1px solid #F0F4F8;
+}
+.catalog__item:nth-last-of-type(1) {
+    border-bottom: none;
+}
+
+.catalog__link {
+    text-decoration: none;
+    font-family: "Gilroy", sans-serif;
+    font-size: 14px;
+    color: rgba(16, 42, 67, 0.9);
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+.catalog__link:after {
+    content: url("../images/svg/arrow_bottom.svg");
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+}
+
+.intro__desc {
+    padding-left: 45px;
+    padding-top: 50px;
+    display: flex;
+    width: 90%;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.intro__heading {
+    font-family: "Gilroy", sans-serif;
+    width: 300px;
+    font-weight: 900;
+    font-size: 46px;
+    color: #102A43;
+    margin-bottom: 20px;
+}
+
+.intro__description {
+    font-family: "Gilroy", sans-serif;
+    width: 470px;
+    line-height: 28px;
+    font-size: 16px;
+    color: #102A43;
+    margin-bottom: 30px;
+}
+
+.intro__btn {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #97CBF2;
+    background: none;
+    border: 2px solid #97CBF2;
+    border-radius: 10px;
+    padding: 18px 12px;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+.intro__cardList {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.intro__sale {
+    font-family: "Gilroy", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #102A43;
+    margin-bottom: 25px;
+}
+/* \Intro */
+
+
 .footer {
     height: 315px;
     margin-top: -315px;
