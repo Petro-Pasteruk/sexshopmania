@@ -31,6 +31,18 @@ body {
     margin-bottom: 30px;
 }
 
+.main__heading:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: #F4E2E5;
+    border-radius: 0 5px 5px 0;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -45px
+}
+
 #wrapper {
     min-height: 100%;
     padding-bottom: 315px;
@@ -189,6 +201,10 @@ body {
     position: relative;
 }
 
+.basket__wrap.active > a:after {
+    display: block;
+}
+
 .basket__wrap > a:after {
     content: "";
     width: 11px;
@@ -198,6 +214,7 @@ body {
     position: absolute;
     right: -2px;
     top: -2px;
+    display: none;
 }
 
 .basket {
@@ -349,18 +366,6 @@ body {
     width: 52%;
 }
 
-.benefitsBlog .main__heading:before {
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 2px;
-    background: #F4E2E5;
-    border-radius: 0 5px 5px 0;
-    top: 50%;
-    transform: translateY(-50%);
-    left: -45px
-}
-
 .benefits {
     display: flex;
     flex-wrap: wrap;
@@ -506,6 +511,149 @@ body {
 }
 /* \Category */
 
+/* News */
+.news__wrap {}
+
+.news {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news__item {
+    background: #FFFFFF;
+    border: 1px solid #F4E2E5;
+    box-sizing: border-box;
+    box-shadow: 0 12px 40px rgba(51, 51, 51, 0.08);
+    border-radius: 10px;
+    width: 270px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding-top: 38px;
+}
+
+.news__item.new:before {
+    content: "New";
+    position: absolute;
+    text-transform: uppercase;
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #102A43;
+    background: #F4E2E5;
+    border-radius: 7px;
+    left: -6px;
+    top: -8px;
+    height: 30px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.news__img {
+    margin-bottom: 23px;
+}
+
+.news__heading {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #102A43;
+    margin-bottom: 25px;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 26px;
+}
+
+.news__code {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    display: flex;
+    color: #8D2B0B;
+    opacity: 0.5;
+    margin-bottom: 16px;
+    padding-left: 18px;
+}
+
+.news__buyPrice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+    margin-bottom: 38px;
+}
+
+.news-price__heading {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color: #102A43;
+    opacity: 0.5;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.news__price {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #102A43;
+}
+
+.news__btn.buy {
+    font-family: "Gilroy", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 9px 28px;
+    background: #97CBF2;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+}
+/* \News */
+
+/* Pagination */
+.pagination {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 225px;
+    margin: 40px auto 0 auto;
+}
+
+.pagination__arrow {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pagination__arrow.next {
+    transform: rotate(180deg);
+}
+
+.pagination__item {
+    cursor: pointer;
+    font-family: "Gilroy", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #334E68;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination__item.active {
+    background: #97CBF2;
+}
 
 .footer {
     height: 315px;
