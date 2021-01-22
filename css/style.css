@@ -428,7 +428,8 @@ body {
 
 .catalog-dropDown__block {
     padding-left: 25px;
-    padding-right: 50px;
+    padding-right: 10px;
+    min-width: 240px;
     position: relative;
 }
 
